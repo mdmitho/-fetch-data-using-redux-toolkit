@@ -1,14 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit"
-import counterSlice from "../features/counter/counterSlice"
-import postSlice from "../features/post/postSlice";
+import booksReducer  from "../AllBook/BooksSlice"
+
 
 
 
 const store = configureStore({
-  reducer: {
-    counter: counterSlice,
-    posts:postSlice,
-  },
-});
+    reducer:{
+        booksReducer: booksReducer,
+    }
+})
 
 export default store;
