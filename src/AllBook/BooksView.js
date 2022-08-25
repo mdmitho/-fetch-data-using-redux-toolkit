@@ -15,12 +15,12 @@ dispatch(deleteBook(id))
 
     return (
       <div>
-        <h1>List of Books</h1>
+       
 
         <table className="container mx-auto my-3">
           <thead>
             <tr className="j">
-              <th className="border-2 p-3">ID</th>
+           
               <th className="border-2 p-3">Title</th>
               <th className="border-2 p-3">Author</th>
               <th className="border-2 p-3">Action</th>
@@ -32,7 +32,7 @@ dispatch(deleteBook(id))
                 const { id, title, author } = book;
                 return (
                   <tr>
-                    <td className="border-2 p-3">{id}</td>
+         
                     <td className="border-2 p-3">{title}</td>
                     <td className="border-2 p-3">{author}</td>
                     <td className="border-2 p-3">
